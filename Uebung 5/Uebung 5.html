@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <title>Uebung 5</title>
+    <style>
+        * {
+            --htw-green: #76B900;
+            --htw-orange: #FF5F00;
+            --htw-blue: #0082D1;
+         }
+
+        .table tbody tr:hover {
+            background-color: var(--htw-green);
+        }
+
+        nav {
+            background-color: lightgrey;
+        }
+
+        main {
+            margin: 1%;
+        }
+
+        ul li.nav-item a.nav-link {
+            color: #FF5F00;
+        }
+
+        ul li.nav-item a:hover {
+            color: #0082D1;
+        }
+
+        footer {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 992px) {
+
+
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+<header class="p-5 mb-4 bg-light rounded-3 row">
+
+    <div class="col-3">
+        <img src=" ../FIW Logo/fiw.jpg " alt="FIW Logo " style="width:53px; height: 48px; ">
+    </div>
+    <div class="col-9">
+
+        <h1>Teilnehmerinnen Webtech</h1>
+
+    </div>
+
+</header>
+<nav class="m-1 ">
+    <ul class="nav nav-pills nav-fills ">
+        <li class="nav-item active ">
+            <a class="nav-link " href="# ">ALLE</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link " href="#A ">A-G</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link " href="#H ">H-L</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link " href="#M ">M-R</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link " href="#S ">S-Z</a>
+        </li>
+    </ul>
+</nav>
+<main class="row mx-1 ">
+
+
+
+    <section class="col-12 col-lg-8 ">
+        <table class="table table-striped table-responsive-md table-hover ">
+
+
+            <thead>
+
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Vorname" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Nachname" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="E-Mail-Adresse" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="IP-Adresse" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+
+            </thead>
+
+            <tbody id="table-body">
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Adam" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Anderson" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="aanderson8@google.fr" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="118.93.83.157" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Susan" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Andrwes" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="sandrewsn@google.co.jp" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="228.214.9.251" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Catherine" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Andrwes" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="candrewsp@noaa.gov" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="112.111.87.178" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Alan" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Bradley" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="abradley1c@globo.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="229.152.117.127" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Anne" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Brooks" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="abrooks16@bravesites.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="243.159.39.234" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Russell" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Brown" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="rbrownq@nifty.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="159.60.107.14" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Roy" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Campbell" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="rcampbell1@geocities.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="237.232.34.20" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Russell" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Campbell" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="rcampbell17@eventbrite.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="251.2.92.63" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Bonnie" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Coleman" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="bcoleman11@fc2.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="109.150.122.102" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Ernest" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Coleman" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="ecoleman15@businessweek.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="213.173.4.7" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Richard" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Cruz" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="rcruz7@unc.edu" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="235.124.23.221" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Sean" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Cruz" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="scruz10@answers.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="92.255.49.227" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder=">Rebecca" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Cunningham" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="rcunninghamd@mac.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="65.79.191.52" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Margaret" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Evans" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="mevansh@pcworld.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="162.10.86.196" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Jeffrey" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Ford" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="jford14@cnet.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="210.216.54.14" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Andrea" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Gardner" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="agardnerv@woothemes.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="179.91.0.30" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Deborah" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="George" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="dgeorge6@furl.net" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="201.76.47.162" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Sean" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Gibson" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="sgibsony@alexa.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="48.114.103.55" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Virginia" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Graham" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="vgrahamk@aol.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="165.219.171.1" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Steven" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Hamilton" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="shamiltonu@state.tx.us" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="38.194.91.201" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Virginia" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Hawkins" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="vhawkinsf@ehow.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="93.120.46.203" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Edward" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Hicks" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="ehicksc@pcworld.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="199.153.27.1" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Mark" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Johnson" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="mjohnsonj@hostgator.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="73.87.135.206" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Ruth" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Jordan "  />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="rjordan1a@smugmug.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="193.140.80.64" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Antonio" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Kim" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="akim4@odnoklassniki.ru" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="168.244.191.78" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Jennifer" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Marshall" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="jmarshallt@gnu.org" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="104.191.49.94" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Eric" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Matthews" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="ematthews5@independent.co.uk" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="138.194.30.1" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Raymond" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Mcdonald" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="rmcdonald2@ihg.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="161.24.42.24" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Eric" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Miller" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="emillere@creativecommons.org" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="122.159.17.218" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Jonathan" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Morales" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="jmoralesa@ovh.net" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="97.65.110.105" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Marie" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Morgan" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="mmorganb@cloudflare.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="226.79.152.112" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Amanda" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Nelson" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="anelson13@indiatimes.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="161.185.121.245" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Lisa" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Olson" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="lolsonr@telegraph.co.uk" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="77.245.172.100" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Alice" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Ortiz" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="aortizw@histats.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="179.52.222.21" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Peter" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Phillips" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="pphillipss@1688.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="11.158.255.76" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Matthew" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Porter" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="mporter9@europa.eu" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="174.81.178.88" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Tammy" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Ray" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="trayx@weather.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="192.243.38.190" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Mark" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Richardson" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="mrichardson1d@ihg.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="209.217.14.154" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Joan" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Roberts" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="jroberts12@alibaba.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="4.91.143.62" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Kathleen" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Rose" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="kroseg@pinterest.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="222.172.140.56" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Steve" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Sanders" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="ssanders1b@wikispaces.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="91.61.109.245" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Shirley" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Scott" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="sscottm@macromedia.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="219.237.108.82" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Lillian" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Stephens" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="lstephens19@hugedomains.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="89.85.137.204" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Nicole" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Thompson" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="nthompson3@admin.ch" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="179.91.0.30" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Marie" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Thompson" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="mthompsonz@yelp.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="162.164.5.231" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Alan" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Vasquez" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="avasquezo@miibeian.gov.cn" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="178.109.86.172" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Mildred" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Watkins" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="mwatkins0@miibeian.gov.cn" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="150.67.132.64" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Eugene" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Williams" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="ewilliamsi@deliciousdays.com" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="67.208.26.182" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+
+            <tr id="input_tr">
+                <td>
+                    <input id="inp1" type="text" class="form-control" placeholder="Catherine" />
+                </td>
+                <td>
+                    <input id="inp2" type="text" class="form-control" placeholder="Williams" />
+                </td>
+                <td>
+                    <input id="inp3" type="text" class="form-control" placeholder="cwilliamsl@360.cn" />
+                </td>
+                <td>
+                    <input id="inp4" type="text" class="form-control" placeholder="154.87.204.51" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">
+                        Add
+                    </button>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+        </table>
+    </section>
+
+
+
+
+</main>
+
+    <footer>
+        Übung 5- Raneem Abou Ghalyoun & Rawan Al Aswad
+    </footer>
+
+
+
+</body>
+</html>
